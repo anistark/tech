@@ -1,0 +1,15 @@
+
+author:
+    name: Kumar Anirudha
+    twitter: kranirudha
+    github: anistark
+    email: anirudhastark@yahoo.com
+
+site:
+    name: Coding is my Ninja way
+    production_url: <final url>
+
+TEMPLATE_CONTEXT_PROCESSORS:
+    - django.core.context_processors.request
+    - django.contrib.auth.context_processors.auth
+    - _theme.views.context_processor
