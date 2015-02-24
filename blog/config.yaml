@@ -1,0 +1,15 @@
+
+author:
+    name: <your name>
+    twitter: <twitter_handle>
+    github: <github_handle>
+    email: <email>
+
+site:
+    name: Your New djangothis Site
+    production_url: <final url>
+
+TEMPLATE_CONTEXT_PROCESSORS:
+    - django.core.context_processors.request
+    - django.contrib.auth.context_processors.auth
+    - _theme.views.context_processor
