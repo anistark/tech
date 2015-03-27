@@ -2,9 +2,11 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 
 urlpatterns = patterns('',
-    # Examples:
+    # TechSite:
     url(r'^$', 'techsite.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
+
+    # Convergence :
+    url(r'^convergence/', 'convergence.views.home', name='convergence'),
 
     url(r'^admin/', include(admin.site.urls)),
 )
