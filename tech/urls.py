@@ -8,5 +8,8 @@ urlpatterns = patterns('',
     # Convergence :
     url(r'^convergence/', 'convergence.views.home', name='convergence'),
 
+    # Techblog : 
+    url(r'^techblog/', 'techblog.views.home', name='techblog'),
+
     url(r'^admin/', include(admin.site.urls)),
 )
