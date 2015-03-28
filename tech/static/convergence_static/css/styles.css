@@ -16,6 +16,7 @@ a {
   height: 100%;
   margin-left:0;
   margin-right:0;
+  color: #bbb;
   background-color: #222;
 }
 
@@ -26,5 +27,19 @@ a {
 }
 
 .footer {
-  color: #fff;
+  position: fixed;
+  bottom: 0;
+  background-color: #777;
+}
+
+.footer .left_align{
+  text-align: left;
+}
+
+.footer .middle_align{
+  text-align: center;
+}
+
+.footer .right_align{
+  text-align: right;
 }
