@@ -6,7 +6,8 @@ urlpatterns = patterns('',
     url(r'^$', 'techsite.views.home', name='home'),
 
     # Convergence :
-    url(r'^convergence/', 'convergence.views.home', name='convergence'),
+    url(r'^convergence/home', 'convergence.views.home', name='convergence'),
+    url(r'^convergence/post', 'convergence.views.post', name='post'),
 
     # Techblog : 
     url(r'^techblog/', 'techblog.views.home', name='techblog'),
