@@ -37,7 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'techsite',
-    'convergence'
+    'techblog'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -60,8 +60,8 @@ WSGI_APPLICATION = 'tech.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'techdb'),
+        'ENGINE': '',
+        'NAME': '',
     }
 }
 
@@ -70,7 +70,7 @@ DATABASES = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
