@@ -3,3 +3,7 @@
 
 # DB
 *.sqlite3
+
+# pyc files
+*/*.pyc
+
