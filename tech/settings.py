@@ -24,7 +24,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['52.74.26.235','127.0.0.1:8000']
+ALLOWED_HOSTS = ['127.0.0.1:8000']
 
 
 # Application definition
@@ -36,7 +36,9 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'techsite'
+    'techsite',
+    'rest_framework',
+    'regionaire',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -59,8 +61,8 @@ WSGI_APPLICATION = 'tech.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': '',
-        'NAME': '',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'techdb.sqlite3'),
     }
 }
 
@@ -94,4 +96,9 @@ TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
     'tech/templates/',
 )
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAdminUser',),
+    'PAGE_SIZE': 10
+}
 

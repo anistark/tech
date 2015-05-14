@@ -1,2 +1,5 @@
 /gunicorn.log
 /gunicorn-error.log
+
+# DB
+*.sqlite3
